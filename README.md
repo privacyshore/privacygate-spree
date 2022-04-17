@@ -6,8 +6,8 @@ Accept crypto payments on your Spree store with the official Coinbase Commerce S
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
-  gem 'spree_coinbase_commerce', github: 'coinbase/coinbase-commerce-spree'
-  gem 'coinbase_commerce', github: 'coinbase/coinbase-commerce-ruby'
+  gem 'spree_coinbase_commerce', github: 'privacyshore/privacygate-spree'
+  gem 'coinbase_commerce', github: 'privacyshore/privacygate-ruby'
   ```
 
 2. Install the gem using Bundler:
@@ -42,7 +42,4 @@ require 'spree_coinbase_commerce/factories'
 ```
 
 ## Integrate with other e-commerce platforms
-[Coinbase Commerce Integrations](https://commerce.coinbase.com/integrate)
-
-
-Copyright (c) 2018 Coinbase Commerce, released under the New BSD License
+[Docs](https://privacygate.io/docs)
