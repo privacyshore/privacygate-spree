@@ -12,7 +12,7 @@ module Spree
     end
 
     def api_uri
-      "https://api.commerce.coinbase.com"
+      "https://api.privacygate.io"
     end
   end
 end
