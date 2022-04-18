@@ -1,8 +1,8 @@
 module Spree
   class CheckoutController < StoreController
-    before_action :redirect_to_coinbase_commerce, only: :update
+    before_action :redirect_to_privacygate, only: :update
 
-    def redirect_to_coinbase_commerce
+    def redirect_to_privacygate
       order = current_order || raise(ActiveRecord::RecordNotFound)
       if params[:state] == "payment"
         return unless params[:order][:payments_attributes]
@@ -12,7 +12,7 @@ module Spree
         payment_method = @order.payment_method
       end
 
-      if !payment_method.nil? && payment_method.kind_of?(PaymentMethod::CoinbaseCommercePayment)
+      if !payment_method.nil? && payment_method.kind_of?(PaymentMethod::PrivacyGatePayment)
         client = payment_method.create_client
         payment = order.payments.create!(amount: order.total,
                                          payment_method: payment_method,

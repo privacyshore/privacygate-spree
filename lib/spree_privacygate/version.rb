@@ -1,7 +1,7 @@
-module SpreeCoinbaseCommerce
+module SpreePrivacyGate
   module_function
 
-  # Returns the version of the currently loaded SpreeCoinbaseCommerce as a
+  # Returns the version of the currently loaded SpreePrivacyGate as a
   # <tt>Gem::Version</tt>.
   def version
     Gem::Version.new VERSION::STRING

@@ -1,8 +1,8 @@
-module SpreeCoinbaseCommerce
+module SpreePrivacyGate
   class Engine < Rails::Engine
     require 'spree/core'
     isolate_namespace Spree
-    engine_name 'spree_coinbase_commerce'
+    engine_name 'spree_privacygate'
 
     # use rspec for tests
     config.generators do |g|
@@ -10,7 +10,7 @@ module SpreeCoinbaseCommerce
     end
 
     initializer "spree.payment_method.payment_methods", :after => "spree.register.payment_methods" do |app|
-      app.config.spree.payment_methods << Spree::PaymentMethod::CoinbaseCommercePayment
+      app.config.spree.payment_methods << Spree::PaymentMethod::PrivacyGatePayment
     end
 
     def self.activate

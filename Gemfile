@@ -6,7 +6,7 @@ git_source(:github) do |repo_name|
 end
 
 gem 'spree', github: 'spree/spree', branch: 'master'
-gem 'coinbase_commerce', github: 'coinbase/coinbase-commerce-ruby'
+gem 'privacygate', github: 'privacyshore/privacygate-ruby'
 # Provides basic authentication functionality for testing parts of your engine
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: 'master'
 gem 'rails-controller-testing'

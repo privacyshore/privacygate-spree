@@ -2,18 +2,18 @@
 lib = File.expand_path('../lib/', __FILE__)
 $LOAD_PATH.unshift lib unless $LOAD_PATH.include?(lib)
 
-require 'spree_coinbase_commerce/version'
+require 'spree_privacygate/version'
 
 Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
-  s.name        = 'spree_coinbase_commerce'
-  s.version     = SpreeCoinbaseCommerce.version
-  s.summary     = 'Coinbase Commerce gateway'
-  s.description = 'Coinbase Commerce gateway'
+  s.name        = 'spree_privacygate'
+  s.version     = SpreePrivacyGate.version
+  s.summary     = 'PrivacyGate'
+  s.description = 'PrivacyGate'
   s.required_ruby_version = '>= 2.2.7'
 
-  s.author    = 'Coinbase Commerce'
-  s.homepage  = 'https://github.com/coinbase/coinbase-commerce-spree'
+  s.author    = 'PrivacyGate'
+  s.homepage  = 'https://github.com/privacyshore/privacygate-spree'
   s.license = 'BSD-3-Clause'
 
   s.require_path = 'lib'

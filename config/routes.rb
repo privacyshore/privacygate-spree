@@ -1,3 +1,3 @@
 Spree::Core::Engine.add_routes do
-  post '/spree_coinbase/notify', to: "coinbase_commerce#notify"
+  post '/spree_privacygate/notify', to: "privacygate#notify"
 end

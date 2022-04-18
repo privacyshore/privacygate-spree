@@ -1,13 +1,13 @@
-# SpreeCoinbaseCommerce
+# SpreePrivacyGate
 
-Accept crypto payments on your Spree store with the official Coinbase Commerce Spree plugin. 
+Accept crypto payments on your Spree store with the official PrivacyGate Spree plugin. 
 
 ## Installation
 
 1. Add this extension to your Gemfile with this line:
   ```ruby
-  gem 'spree_coinbase_commerce', github: 'privacyshore/privacygate-spree'
-  gem 'coinbase_commerce', github: 'privacyshore/privacygate-ruby'
+  gem 'spree_privacygate', github: 'privacyshore/privacygate-spree'
+  gem 'privacygate', github: 'privacyshore/privacygate-ruby'
   ```
 
 2. Install the gem using Bundler:
@@ -17,9 +17,9 @@ Accept crypto payments on your Spree store with the official Coinbase Commerce S
 
 3. Copy & run migrations
   ```ruby
-  bundle exec rails g spree_coinbase_commerce:install
+  bundle exec rails g spree_privacygate:install
   ```
-4. Add ```<your_spree_host>/spree_coinbase/notify``` to Coinbase Commerce webhook settings
+4. Add ```<your_spree_host>/spree_privacygate/notify``` to PrivacyGate webhook settings
 
 5. Restart your server
 
@@ -38,7 +38,7 @@ When testing your applications integration with this extension you may use it's 
 Simply add this require statement to your spec_helper:
 
 ```ruby
-require 'spree_coinbase_commerce/factories'
+require 'spree_privacygate/factories'
 ```
 
 ## Integrate with other e-commerce platforms
